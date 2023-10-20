@@ -1,0 +1,78 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="my_second_code.WebForm2" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Book-Review</title>
+    <style>
+        .secondparagraph {
+            font-size:20px;
+            color:deeppink;
+            text-align:center;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("Images/book-pic.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        td{
+            border-radius:50px;
+        }
+        a {
+            text-decoration: none;
+            color: aqua;
+            
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+    </style>
+
+</head>
+<body class="bg">
+    
+    <table width="100%">
+        <tr>
+            <td width="30%" ><img src="Images/logo.png" width="200" height="200" /></td>
+            <td width="70%" style="color:aqua"><h1>Welcome to the official site of Shameera-Book-Review</h1></td>
+        </tr>
+    </table>
+    <table width="100%" border="1" style="text-align:center;font-size:22px">
+        <tr>
+            <td width="20%" style="color:aqua"><a>Home</a></td>
+            <td width="30%"><a href="Authors-Name.html">Search Book By Author</a></td>
+            <td width="30%"><a href="Books-By-Genre.html">Search Book By Genre</a></td>
+            <td width="20%"><a href="form.html">Contact Us</a></td>
+        </tr>
+    </table><br />
+    <table width="20%" style="float:left;color:blue;font-size:20px;text-align:center">
+        <tr>
+            <td width="20%"><a style="color:blue">Newly Published</a></td>
+        </tr>
+        <tr>
+            <td width="20%"><a style="color:blue">Best Selling</a></td>
+        </tr>
+        <tr>
+            <td width="20%"><a href="Must Read Book.html" style="color:blue">Must Read</a></td>
+        </tr>
+    </table>
+    <!--4th table-->
+    <table width="80%" style="float:left" height="30%">
+        <tr>
+            <td align="center"><h2>welcome to the official site Shameera-Book-Review<br />This site is well known for review of books<br />Our work is to save your time which is going to waste on search for best book to read<br />We provide you our review on books, so that it become easy for you to choose one<br />I hope this website is going to be helpful to you.</h2></td>
+        </tr>
+    </table>
+    <div class="secondparagraph"><h2>yaha se dusra paragraph start hai</h2></div>
+</body>
+</html>

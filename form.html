@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>html form</title>
+</head>
+<body>
+  <form>  <!--form create krne k liye form tag diye-->
+      <fieldset>
+          <!--fieldset form m border set krne ka kaam krta h-->
+          <legend><strong>Enter your details</strong></legend> <!--ye to special se bhut maza aaya isko jaan krke-->
+          <!--input tag bhi ek empty tag h like imag tag-->
+          First Name:
+          <input type="text" name="firstname"><br><br />
+          Last Name:
+          <input type="text" name="lastname"><br /><br />
+          Age:<input type="radio" name="Age" />Under 18  <!--jo bhi input dalo uska name jarur dalo-->
+          <input type="radio" name="Age" checked />over 18<br /><br />
+
+          <!--Dropdown list ye hote hai select name option ke-->
+          Qualification:<select name="qualification">
+              <option value="Option">Option</option>
+              <option value="B.Tech" selected>B.Tech</option>
+              <option value="M.Tech">M.Tech</option>
+              <optin value="BBA">BBA</optin>
+              <option value="MBA">MBA</option>
+              <option value="MCA">MCA</option>
+              <option value="BCA">BCA</option>
+          </select><br /><br />
+          Interest:<ol>
+              <li><input type="checkbox" name="interest" value="Cricket" checked />Cricket</li>
+              <li><input type="checkbox" name="interest" value="TableTennis" />TableTennis</li>
+              <li><input type="checkbox" name="interest" value="Carrom" />Carrom</li>
+              <li><input type="checkbox" name="interest" value="Volleyball" />Volleyball<br /></li>
+          </ol><br />
+          Date of Birth;<input type="date" name="dob" /><br /><br />
+          Mobile:<input type="tel" name="usertel" /><br /><br />
+          <!--<input type="submit" value="Click Here" /><br />
+    <input type="submit" value="Click Here" /><br />
+          Password:<input type="password" name="password" /><br /><br />
+          Email:<input type="email" name="email" /><br /><br />
+          <input type="color" name="chosecolor" /><br /><br />
+          <input type="file" name="chosefile" /><br /><br />
+          <input type="month" name="exammonth" /><br /><br />
+          <input type="number" name="quantity" min="1" max="10" /><br /><br />
+          <input type="range" name="rating" min="1" max="10" /><br /><br />-->
+          Linkedin:<input type="url" name="enterurl" /><br /><br />
+          Instagram:<input type="url" name="enterurl" /><br /><br />
+          <input type="submit" value="Submit" /><br /><br />
+          <input type="reset" /><br /><br />
+      </fieldset>
+ </form>
+</body>
+</html>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Job_Application_Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        fieldset {
+            width: 600px;
+            margin: 20px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text {
+            width: 20%;
+            height: 20px;
+        }
+
+        .row {
+            width: 100%
+        }
+
+        .col {
+            width: 49%;
+            float: left;
+        }
+
+        #clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>Job Application Form</h1>
+        <hr />
+        <p>Thank you for your interest in working with us.Please check below for <br />available job oppourtunities that meet your criteria and send your application <br />by filling out the job application.</p>
+        <div id="clear">
+            Name<br />
+            <input class="text" id="firstname" name="first" placeholder="first" />
+            <input class="text" id="lastname" name="last" placeholder="last" /><br /><br />
+        </div>
+        Email<br />
+        <input type="email" id="email" name="email" placeholder="name@example.com"><br /><br />
+
+        <div class="row">
+            <div class="col" style="float:left">
+                What position you are applying for?<br />
+                <select name="jobrole" id="jobrole">
+                    <option value="select">Select</option>
+                    <option value="developer">Developer</option>
+                    <option value="analyst">Analyst</option>
+                    <option value="coder">Coder</option>
+                    <option value="manager">Manager</option>
+                </select>
+            </div>
+            <div class="col" style="float:left">
+                Available Date<br />
+                <input type="date" id="availabledate" name="availabledate">
+            </div><br /><br /><br />
+            <!--next control-->
+            <div style="clear:both">
+                What is your current employment status?<br />
+                <div class="row">
+                    <div class="col">
+                        <input type="radio" name="employementstatus">
+                        <label>Employed</label><br>
+                        <input type="radio" name="employementstatus">
+                        <label>Unemployed</label><br>
+                    </div>
+                    <div class="col">
+                        <input type="radio" name="employementstatus">
+                        <label>Self-employed</label><br>
+                        <input type="radio" id="html" name="employementstatus" value="HTML">
+                        <label>Student</label><br>
+                    </div>
+                </div>
+            </div><br /><br /><br />
+
+
+            <!--next control-->
+            <div class="row">
+                <div class="col">
+                    Please provide your resume link<br />
+                    <input type="url" id="resumelink" name="resumelink" placeholder="https://www.example.com/"><br><br>
+                </div>
+                <div class="col">
+                    Please upload your resume<br />
+                    <button style="font-size:24px">Button<i class="fa fa-upload"></i></button>
+                </div>
+            </div><br /><br />
+            <!--next control-->
+            <div style="clear:both">
+                Do you have references?(optional)<br />
+                <input class="text" id="firstname" name="first" placeholder="first" />
+                <input class="text" id="lastname" name="last" placeholder="last" /><br /><br />
+            </div>
+            <!--next control-->
+            Reference email<br />
+            <input type="email" id="email" name="email" placeholder="name@example.com"><br /><br /><br />
+            <input type="reset" value="Reset" style="font-size: 30px; border-radius: 20px;">
+            <input type="submit" value="submit" style="font-size:30px;background-color:mediumblue;border-radius:20px;color:white">
+        </div>
+
+    </fieldset>
+</body>
+</html>
